@@ -1,0 +1,83 @@
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.invitados-section {
+    text-align: center;
+    height: 100vh;
+}
+
+.novios-section {
+    text-align: center;
+}
+
+.ceremonia-section {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.invitado-title {
+    font-family: "Gwendolyn", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8rem;
+}
+
+.novios-title {
+    font-family: "Gwendolyn", cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 8rem;
+    color: black;
+    line-height: 7rem;
+}
+
+.ceremonia-title {
+    font-family: "Gwendolyn", cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 5rem;
+    color: #1b7895;
+}
+
+
+.novios-date {
+    font-family: "Roboto Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 5rem;
+    color: #07576e;
+}
+
+.description {
+    font-family: "Roboto Serif", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.ring-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.direccion{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3.5rem;
+    letter-spacing: 0.5rem;
+}
+
+
+
