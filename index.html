@@ -12,11 +12,45 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Gwendolyn:wght@400;700&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="./utils.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            calculateTimer();
+            setInterval(calculateTimer, 1000);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">
+        </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                type: 'loop',
+                drag: 'free',
+                focus: 'center',
+                perPage: 2,
+                arrows: false,
+                gap: "1rem",
+                autoWidth: true,
+                autoHeight: true,
+                pagination: false,
+                autoScroll: {
+                    speed: 0.7,
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                },
+            });
+            splide.mount(window.splide.Extensions);
+        });
+    </script>
+    <script>
+        calculateTimer();
+    </script>
 </head>
 
 <body>
-    <script src="index.js"></script>
     <div class="container">
         <section class="invitados-section">
             <h1 class="invitado-title">Invitado/a</h1>
@@ -30,11 +64,69 @@
             </div>
         </section>
         <section class="ceremonia-section">
-            <img class="ring-icon" src="./ring.png"/>
+            <img class="ring-icon" src="./ring.png" />
             <span class="ceremonia-title">Ceremonia & Celebración</span>
             <span class="direccion">El Molino Eventos<br>Calle 137 Nº 2524, Berazategui<br>20:15hs</span>
+            <a style="margin-top: 2rem" href="https://maps.app.goo.gl/n6Xz5C5dkjCCC6M98" target="_blank">
+                <button class="llegar-button">CÓMO LLEGAR</button>
+            </a>
         </section>
-
+        <section class="corazon-section">
+            <div class="corazon-wrapper">
+                <img src="heart.svg" />
+                <h2 class="corazon-top" id="corazon-top"></h2>
+                <h2 class="corazon-bottom" id="corazon-bottom"></h2>
+            </div>
+        </section>
+        <section class="asistencia-section">
+            <img class="champagne-icon" src="champagne.svg" />
+            <h2 class="acepto-invitacion">Decile <span class="acepto-title">si acepto</span></br>a nuestra invitación:
+            </h2>
+            <button class="asistencia-button">CONFIRMAR ASISTENCIA</button>
+        </section>
+        <section style="margin-top: 5rem" class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="./couple1.jpg"></li>
+                    <li class="splide__slide"><img src="./couple1.jpg"></li>
+                    <li class="splide__slide"><img src="./couple1.jpg"></li>
+                    <li class="splide__slide"><img src="./couple1.jpg"></li>
+                    <li class="splide__slide"><img src="./couple1.jpg"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="dresscode-section">
+            <img class="dresscode-icon" src="./dresscode.png" />
+            <h2 class="dresscode-title">Dress code</h2>
+            <h2 class="dresscode-elegante">Elegante</h2>
+            <p class="dresscode-reservado">Los colores blanco y azul están</br>reservados para los novios</p>
+        </section>
+        <section class="countdown-timer">
+            <div class="countdown-container">
+                <div class="date-container" style="margin-right: 3rem">
+                    <span id="days-span"></span>
+                    <span>días</span>
+                </div>
+                <div class="date-container">
+                    <span id="hours-span"></span>
+                    <span>hr</span>
+                </div>
+                <div class="date-container">
+                    <span style="margin-bottom: 2.5rem">:</span>
+                </div>
+                <div class="date-container">
+                    <span id="minutes-span"></span>
+                    <span>min</span>
+                </div>
+                <div class="date-container">
+                    <span style="margin-bottom:2.5rem">:</span>
+                </div>
+                <div class="date-container">
+                    <span id="seconds-span"></span>
+                    <span>s</span>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 
