@@ -9,7 +9,7 @@ const frases = [
 ];
 
 const fechas = [
-  "a través del tiempo",
+  "a través del<br> tiempo",
   "29-03-2022",
   "05-09-2022",
   "23-07-2023",
@@ -23,12 +23,10 @@ let index = 0;
 function updateText() {
   const textTop = document.getElementById("corazon-top");
   const textBottom = document.getElementById("corazon-bottom")
-  index = (index + 1) % frases.length;
   textTop.textContent = frases[index];
-  textBottom.textContent = fechas[index];
+  textBottom.innerHTML = fechas[index];
+  index = (index + 1) % frases.length;
 }
-setInterval(updateText, 2000);
-
 
 function calculateTimer() {
     const targetDate = new Date(2026, 10, 7, 20, 15, 0).getTime();

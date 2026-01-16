@@ -16,7 +16,9 @@
     <script src="./utils.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', () => {
+            updateText();
             calculateTimer();
+            setInterval(updateText, 2000);
             setInterval(calculateTimer, 1000);
         });
     </script>
@@ -126,6 +128,23 @@
                     <span>s</span>
                 </div>
             </div>
+        </section>
+        <section class="regalo-section">
+            <img class="gift-icon" src="./gift.png" />
+            <p class="regalo-title">Si deseas hacernos un regalo<br>para nuestra <span class="lunamiel-title">luna de
+                    miel</span></p>
+            <p class="cbu">CBU: 05406040640</p>
+        </section>
+        <section class="playlist-section">
+            <div class="playlist-container">
+                <img class="music-icon" src="music.png" />
+                <h2 class="playlist-title">Playlist colaborativa</h2>.
+                <img class="music-icon" src="music.png" />
+            </div>
+            <button class="asistencia-button">¡SUGERI TU CANCIÓN!</button>
+        </section>
+        <section class="gracias-section">
+            <h2 class="acepto-invitacion"><span class="acepto-title">Gracias</span> por<br>celebrar con nosotros</h2>
         </section>
     </div>
 </body>

@@ -27,6 +27,13 @@
     font-weight: bold;
 }
 
+.playlist-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 .invitados-section {
     text-align: center;
     height: 100vh;
@@ -62,6 +69,60 @@
     text-align: center;
 }
 
+.regalo-section {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.playlist-section {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gracias-section {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.regalo-title {
+    font-family: "Roboto Serif", serif;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 2rem;
+}
+
+.lunamiel-title {
+    font-family: "Gwendolyn", cursive;
+    margin-left: 0.5rem;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 4rem;
+    color: #1b7895;
+    letter-spacing: 4px;
+
+}
+
+.cbu {
+    font-family: "Roboto Serif", serif;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
 
 .invitado-title {
     font-family: "Gwendolyn", cursive;
@@ -85,6 +146,19 @@
     font-style: normal;
     font-size: 5rem;
     color: #1b7895;
+}
+
+.playlist-title {
+    font-family: "Gwendolyn", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    margin: 0;
+    white-space: nowrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #1b7895;
+
 }
 
 .dresscode-title {
@@ -112,7 +186,6 @@
     font-size: 1.7rem;
     text-align: center;
     letter-spacing: 5px;
-
 }
 
 
@@ -194,6 +267,7 @@
 .corazon-top {
     font-family: "Gwendolyn", cursive;
     white-space: nowrap;
+    text-align: center;
     font-size: 3rem;
     position: absolute;
     top: 20%;
@@ -204,7 +278,7 @@
 .corazon-bottom {
     font-family: "Roboto Serif", serif;
     white-space: nowrap;
-
+    text-align: center;
     font-weight: 200;
     font-style: normal;
     font-size: 2rem;
@@ -230,6 +304,19 @@
     height: 120px;
     width: 120px;
 }
+
+.gift-icon {
+    height: 120px;
+    width: 120px;
+}
+
+.music-icon {
+    height: 75px;
+    width: 75px;
+    filter: brightness(0) saturate(100%) invert(33%) sepia(77%) saturate(490%) hue-rotate(148deg) brightness(100%) contrast(89%);
+
+}
+
 
 .direccion {
     font-size: 3rem;
